@@ -1,0 +1,7 @@
+../Core/Src/orientation_est.c:5:13:norm_quaternion	24	static
+../Core/Src/orientation_est.c:15:6:estimate_euler_angles	40	static
+../Core/Src/orientation_est.c:38:6:update_euler_angles_gyro	40	static
+../Core/Src/orientation_est.c:56:13:complementary_filter	64	static
+../Core/Src/orientation_est.c:80:6:euler2quater	48	static
+../Core/Src/orientation_est.c:94:6:update_quater_gyro	56	static
+../Core/Src/orientation_est.c:115:6:complementary_filter_quater	32	static
