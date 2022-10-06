@@ -1,0 +1,9 @@
+../Core/Src/mpu9250.c:7:13:activate_spi_mpu9250	8	static
+../Core/Src/mpu9250.c:12:13:deactivate_spi_mpu9250	8	static
+../Core/Src/mpu9250.c:17:6:ak8963_write_reg	16	static
+../Core/Src/mpu9250.c:25:6:ak8963_read_reg	16	static
+../Core/Src/mpu9250.c:35:6:mpu9250_init	16	static
+../Core/Src/mpu9250.c:86:6:mpu9250_read_sensor	24	static
+../Core/Src/mpu9250.c:140:6:mpu9250_write_reg	16	static
+../Core/Src/mpu9250.c:148:6:mpu9250_read_reg	24	static
+../Core/Src/mpu9250.c:157:6:HAL_SPI_RxCpltCallback	16	static
