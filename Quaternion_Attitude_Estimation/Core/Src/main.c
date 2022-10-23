@@ -144,19 +144,8 @@ int main(void)
 	  {
 
 		  mpu9250_read_sensor(&mpu_data);
-		  estimate_euler_angles(mpu_data, &euler_angles);
-		  euler2quater(&quaternion_gyro, euler_angles);
-//		  estimate_euler_angles(mpu_data, &euler_angles_gyro);
-//		  euler2quater(&quaternion_final, euler_angles_gyro);
-		   complementary_filter_quater(&quaternion_final, mpu_data);
-		  //update_quater_gyro(&quaternion_gyro, mpu_data);
-		  s_test = quaternion_gyro.s;
-		  s_test2 = quaternion_final.s;
-		  //x_test = euler_angles.yaw;
-//		  euler_angles = complementary_filter(mpu_data);
+		  complementary_filter_quater(&quaternion_final, mpu_data);
 		  uart_counter++;
-		  //pitch_angle_gyro = (float)euler_angles.yaw;
-//		  pitch_angle_acc_magn = (float) mpu_data.x_mag;
 		  if(uart_counter > 40)
 		  {
 			  HAL_UART_Transmit_DMA(&huart2, (uint8_t *)&quaternion_final, sizeof(quaternion_final));
